@@ -5,9 +5,12 @@
 #include <ftxui/component/captured_mouse.hpp>
 #include <ftxui/component/screen_interactive.hpp>
 
+#include "ui.h"
+
 using namespace ftxui;
 
 int main(){
+    UserInterface::UI usin;
     auto screen = ScreenInteractive::FitComponent();
     auto render_space = Renderer( [&] {
             return vbox({
