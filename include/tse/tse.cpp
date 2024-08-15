@@ -1,5 +1,11 @@
 #include "tse.h"
 
+/*
+@brief This functuin handle filemanager errors
+@param a link to exception
+@param b link to exception description (default = "")
+
+*/
 void tse::tserr( //hanlde all errors 
     std::exception &error, 
     const std::string &additional_info = ""
