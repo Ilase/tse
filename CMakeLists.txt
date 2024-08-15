@@ -1,7 +1,7 @@
 #==========================================================================
 cmake_minimum_required(VERSION 3.11)
 project(
-    ftxui-project-template 
+    tse
     LANGUAGES CXX 
     VERSION 1.0.0
 )
@@ -28,7 +28,8 @@ set(
 )
 
 
-include_directories(include)
+include_directories(include/ui)
+add_subdirectory(include/ui)
 
 
 #==========================================================================
@@ -43,6 +44,8 @@ target_link_libraries(
     PRIVATE ftxui::screen
     PRIVATE ftxui::dom
     PRIVATE ftxui::component
+    ui
+
 )
 
 
